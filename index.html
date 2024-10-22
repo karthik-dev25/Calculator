@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./calculator.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Calculator</h1>
+        <div>
+            <label for="checkbox">Dark Mode</label>
+            <input type="checkbox" onchange="handleDarkMode()" id="mySwitch" name="checkbox">
+        </div>
+    </div>
+    <div class="result">
+    </div>
+    <div class="calculator">
+        <form action="/" onsubmit="handleSubmit()">
+            <input type="number" name="number1" id="number1" placeholder="Enter Number" required>
+            <input type="number" name="number2" id="number2" placeholder="Enter Number" required>
+            <select name="operator" id="operator">
+                <option value="addition">+</option>
+                <option value="subtraction">-</option>
+                <option value="multiply">*</option>
+                <option value="division">/</option>
+            </select>
+            <button type="submit">Calculate</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
